@@ -111,14 +111,14 @@ label {
   font-family: "Poppins", serif;
 }
 
-.btn-color-mode-switch > label.btn-color-mode-switch-inner {
+.btn-color-mode-switch>label.btn-color-mode-switch-inner {
   background: #e0e0e0;
   border-radius: 26px;
   transition: all 0.3s ease;
   box-shadow: 0px 0px 8px 0px rgba(17, 17, 17, 0.34) inset;
 }
 
-.btn-color-mode-switch > label.btn-color-mode-switch-inner:before {
+.btn-color-mode-switch>label.btn-color-mode-switch-inner:before {
   content: attr(data-on);
   position: absolute;
   font-size: 12px;
@@ -127,7 +127,7 @@ label {
   right: 20px;
 }
 
-.btn-color-mode-switch > label.btn-color-mode-switch-inner:after {
+.btn-color-mode-switch>label.btn-color-mode-switch-inner:after {
   content: attr(data-off);
   width: 70px;
   height: 28px;
@@ -142,24 +142,18 @@ label {
   padding: 5px 0px;
 }
 
-.btn-color-mode-switch
-  input[type="checkbox"]:checked
-  + label.btn-color-mode-switch-inner {
+.btn-color-mode-switch input[type="checkbox"]:checked+label.btn-color-mode-switch-inner {
   background: rgb(49, 49, 49);
   color: #fff;
 }
 
-.btn-color-mode-switch
-  input[type="checkbox"]:checked
-  + label.btn-color-mode-switch-inner:after {
+.btn-color-mode-switch input[type="checkbox"]:checked+label.btn-color-mode-switch-inner:after {
   content: attr(data-on);
   left: 71.8px;
   background: #3c3c3c;
 }
 
-.btn-color-mode-switch
-  input[type="checkbox"]:checked
-  + label.btn-color-mode-switch-inner:before {
+.btn-color-mode-switch input[type="checkbox"]:checked+label.btn-color-mode-switch-inner:before {
   content: attr(data-off);
   right: auto;
   left: 20px;
@@ -171,11 +165,11 @@ label {
 
 /*Dark Mode*/
 
-body.dark .btn-burger{
+body.dark .btn-burger {
   fill: white !important;
 }
 
-body.dark .burger{
+body.dark .burger {
   filter: invert(100%);
 }
 
@@ -197,7 +191,7 @@ body.dark {
   background-color: #121212;
 }
 
-body.dark header{
+body.dark header {
   background-color: #121212;
 }
 
@@ -242,6 +236,13 @@ h2.dark {
 p.dark {
   color: whitesmoke;
   text-shadow: none;
+}
+
+body.dark .gradientOnDark {
+  background: linear-gradient(to right, white, white 20%, purple);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 /*Dark Mode End*/
@@ -339,6 +340,15 @@ p.dark {
 }
 
 /* End Social Buttons */
+
+.typewriter h2 {
+  overflow: hidden;
+  border-right: .08em solid #420769;
+  animation:
+    typing 3.5s steps(40, end) 1s infinite alternate,
+    blink-caret .75s step-end infinite;
+
+}
 
 /* End Home */
 
@@ -478,7 +488,7 @@ p.dark {
 .skill-per.php {
   width: 25%;
   animation-delay: 0.5s;
-  
+
 }
 
 .skill-per .tooltip {
@@ -594,7 +604,52 @@ p.dark {
 
 /*End projects*/
 
+
 /* Animations */
+
+body {
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+
+  80% {
+    width: 100%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+
+  from,
+  to {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: #420769;
+  }
+}
+
 
 @keyframes progress {
   0% {
@@ -630,4 +685,5 @@ p.dark {
     opacity: 1;
   }
 }
+
 /* End Animations */
