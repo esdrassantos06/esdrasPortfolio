@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Portifolio de Esdras</title>
     <meta name="description" content="Meu portifolio">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="icon" type="image/x-icon" href="assets/icons/favicon.png">
-    <link rel="stylesheet" href="css/build.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/build.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -20,19 +20,20 @@
         rel="stylesheet">
 </head>
 
-<body class="bg-customBg w-full min-h-screen overflow-x-hidden">
+<body class="bg-customBg w-full min-h-screen overflow-x-hidden ">
     <header
         class="preto flex justify-between z-[99] items-center w-full py-8 px-10p select-none bg-customBg fixed top-0 left-0">
-        <div class="container-nav1 flex flex-row justify-between max-[600px]:w-fit w-screen">
+        <div class="container-nav1 flex flex-row justify-between max-sm:w-fit w-screen">
             <div class="flex">
-                <a href="#" class="text-xl lg:flex lg:items-center font-medium mr-8 text-gray-800" id="logo">
+                <a href="#" class="text-xl lg:flex lg:items-center font-medium mr-8 max-[400px]:mr-1 text-gray-800"
+                    translate="no" id="logo">
                     <span class="purple">Es</span>dras </a>
                 <nav id="mobileNav"
                     class="fixed z-[99] transition-transform duration-500 top-0 left-0 h-full w-full flex-col bg-black bg-opacity-90 hidden justify-center items-center space-y-8 lg:relative lg:h-auto lg:w-auto lg:bg-transparent lg:flex lg:flex-row lg:items-center lg:space-x-4">
                     <ul class="text-white transition-transform duration-500 text-3xl flex flex-col lg:flex-row items-center gap-8"
                         id="navLinks">
                         <li>
-                            <a href="#home" id="clr" class="active">Home</a>
+                            <a href="#home" translate="no" id="clr" class="active">Home</a>
                         </li>
                         <li>
                             <a href="#about" id="colr">About</a>
@@ -45,11 +46,11 @@
             </div>
             <div class="container-nav hidden lg:flex lg:items-center">
                 <a class="list-none text-zinc-50 btn-contactme bg-roxo p-[15px] rounded-xl mr-6 w-[150px] h-12 font-medium border-0 relative overflow-hidden cursor-pointer outline-none flex justify-center items-center"
-                    href="contact.html">Contact-me!</a>
+                    href="contact.html" translate="no">Contact-me!</a>
             </div>
         </div>
-        <div class="btn-container mr-8 flex flex-row">
-            <svg viewBox="0 0 16 16" class="bi bi-sun-fill max-[400px]:mr-1 mr-2" fill="currentColor" width="23"
+        <div class="btn-container mr-8 max-[400px]:mr-4 flex flex-row">
+            <svg viewBox="0 0 16 16" class="bi bi-sun-fill max-sm:mr-1 mr-2" fill="currentColor" width="23"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
                     d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"
@@ -59,11 +60,10 @@
                 id="light">
                 <input value="1" class="w-12 h-6 opacity-0 absolute top-0 m-0 cursor-pointer" id="color_mode"
                     name="color_mode" type="checkbox">
-                <label
-                    class="btn-color-mode-switch-inner max-[400px]:w-32 overflow-hidden m-0 w-36 h-8 relative block cursor-pointer"
+                <label class="btn-color-mode-switch-inner  overflow-hidden m-0 w-36 h-8 relative block cursor-pointer"
                     data-off="Light" data-on="Dark" id="trail" for="color_mode"></label>
             </label>
-            <svg viewBox="0 0 16 16" class="bi bi-moon-stars-fill max-[400px]:ml-1 ml-2" fill="currentColor" width="23"
+            <svg viewBox="0 0 16 16" class="bi bi-moon-stars-fill max-sm:ml-1 ml-2" fill="currentColor" width="23"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
                     d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"
@@ -74,7 +74,7 @@
             </svg>
         </div>
         <button
-            class="right-2 max-[400px]:right-1 z-[99] btn-burger absolute cursor-pointer transition-transform duration-500 lg:hidden"
+            class="right-2 max-sm:right-1 z-[99] btn-burger absolute cursor-pointer transition-transform duration-500 lg:hidden"
             id="rotateBtn">
             <svg xmlns="http://www.w3.org/2000/svg" class="transition-transform duration-500" width="36" height="36"
                 viewBox="0 0 24 24">
@@ -85,19 +85,29 @@
     </header>
     <main class="w-full h-full">
         <div class="container-principal h-[101dvh]">
-            <section class="flex h-full flex-wrap w-full" id="home">
-                <article class="mt-[30vh] flex flex-col justify-start ml-12 items-start w-full poppins">
-                    <h1 class="select-none text-[50pt] font-bold preto">Hi, I'm <span class="text-roxo">Esdras</span>
-                    </h1>
-                    <h2 class="select-none text-4xl preto">React Developer</h2>
-                    <p class="max-w-96 mt-4 preto"> I'm Esdras, a FrontEnd Developer. I'm an 18-year-old and have 1 year of experience. Im currently living in Portugal. </p>
+            <section class="flex h-full flex-row w-full items-center max-lg:flex-wrap" id="home">
+                <article
+                    class="mt-0 max-sm:mt-[5vh] flex flex-col justify-start max-sm:ml-4 ml-12 items-start w-full poppins">
+                    <h1 class="select-none text-[50pt] font-bold preto max-sm:text-[35pt]">Hi, I'm <span
+                            class="text-roxo" translate="no">Esdras</span></h1>
+                    <div class="typewriter whitespace-nowrap mx-0 my-auto">
+                        <h2 class="select-none text-4xl preto max-sm:text-3xl">React Developer</h2>
+                    </div>
+                    <p class="max-w-96 mt-4 preto max-sm:mt-2">I'm Esdras, a FrontEnd Developer. I'm 18 years old and
+                        have 1 year of experience. I'm currently living in Portugal.</p>
                 </article>
-                <!-- Article-->
+
+                <aside
+                    class="z-10 mr-24 relative w-2/4 max-lg:hidden select-none bg-gray-950 rounded-full flex justify-center items-center">
+                    <img class="object-cover rounded-full w-full max-sm:w-3/4" src="assets/images/myself.png"
+                        alt="Profile">
+                </aside>
             </section>
+
             <!-- Section Homee -->
             <div class="container-scroll h-fit flex justify-center items-center relative bottom-12">
                 <button
-                    class="btn-scroll flex items-center justify-center bg-transparent border-none left-1/2 bottom-12 absolute w-8 h-12 max-[800px]:hidden"
+                    class="btn-scroll flex items-center justify-center bg-transparent border-none left-1/2 bottom-12 absolute w-8 h-12 max-md:hidden"
                     id="scrollButton">
                     <span class="scroll w-1 h-3 rounded-xl"></span>
                 </button>
@@ -146,13 +156,13 @@
             </button>
             <!-- Btn back to top-->
             <section
-                class="container1 max-[600px]:w-dvw max-[800px]:flex-wrap max-[800px]:h-fit w-screen flex items-center justify-around h-screen"
+                class="container1 max-sm:w-dvw max-md:flex-wrap max-md:h-fit w-screen flex items-center justify-around h-screen"
                 id="about">
                 <div class="p-4 relative z-10 about-me">
                     <article
                         class="poppins flex flex-col justify-center lg:justify-start lg:items-start items-center relative w-fit"
                         id="about-me">
-                        <h1 class="font-bold max-[600px]:text-[40pt] text-[50pt] select-none text-white">About <span
+                        <h1 class="font-bold max-sm:text-[40pt] text-[50pt] select-none text-white">About <span
                                 class="text-roxo whitespan">Me</span>
                         </h1>
                         <p class="text-white xl:w-2/4 mt-4 p-3">My name is Esdras, I'm an 18-year-old
@@ -165,9 +175,9 @@
                             that enhances the overall user experience. Living in Portugal has given me a broader
                             perspective on international development trends and design standards, and I strive to create
                             solutions that offer enjoyable interactions across a variety of devices and platforms.</p>
-                    </article>
+                    </article> <!-- OK -->
                     <!-- About me Article -->
-                </div>
+                </div> <!-- OK -->
                 <!-- About me div-->
                 <div class="p-4 justify-center flex flex-col max-[400px]:w-4/5 lg:mr-32">
                     <div class="mb-5 mt-3  justify-center flex select-none sticky top-0 z-10 p-2 shadow-md w-full"
@@ -178,7 +188,7 @@
                             onclick="openTab('experience')">Experience</button>
                         <button class="tab-button bg-none border-none cursor-pointer"
                             onclick="openTab('education')">Education</button>
-                    </div>
+                    </div> <!-- OK -->
                     <!-- ID Planta -->
                     <!-- Skills Tab -->
                     <div class="tab-content flex justify-center items-center select-none" id="skills"
@@ -245,7 +255,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> <!-- Skills content  -->
+
                     <!-- Experience Tab -->
                     <div class="tab-content justify-center" id="experience" style="display: none;">
                         <div
@@ -335,17 +346,20 @@
                 </div>
                 <!-- Experience, Skills, Education -->
             </section>
+
+
             <!-- Section  about -->
             <section class="flex flex-col items-center min-h-screen mb-20" id="projects">
                 <div class="poppins flex flex-col mt-24 mb-16">
-                    <span class="preto mt-4 text-gray-950 text-center m-0 font-light select-none"
+                    <span class="preto mt-4 text-gray-950 text-center m-0 font-light select-none max-sm:text-sm"
                         id="backtoblack">Browse My Recent</span>
-                    <h1 class="text-[50pt] preto select-none flex justify-center font-bold">Proj <span
-                            class="purple">ects</span>
+                    <h1
+                        class="text-[50pt] max-sm:text-6xl font-bold select-none text-transparent bg-clip-text bg-gradient-to-r from-black via-black via-20% to-roxo gradientOnDark text-center">
+                        Projects
                     </h1>
                 </div>
                 <!-- Titles -->
-                <div class="container-projects grid grid-cols-2 p-4 gap-8 max-[600px]:grid-cols-1">
+                <div class="container-projects grid grid-cols-2 p-4 gap-8 max-sm:grid-cols-1">
                     <a href="#nothingyet" class="article-wrapper w-[250px] cursor-pointer select-none p-2 rounded-xl">
                         <div class="rounded-lg relative w-full h-[170px] bg-gray-600">
                             <p class="flex justify-center items-center h-full text-gray-200">Coming Soon...</p>
